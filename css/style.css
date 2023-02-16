@@ -93,15 +93,18 @@ a {
 }
 
 .navigation,
-.contact {
+.contact,
+.features,
+.business,
+.cards {
   display: flex;
 }
 
-.link-nav {
+.navigation .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.link-cont {
+.contact .item:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -113,6 +116,10 @@ a {
 .hero {
   background-color: var(--background-hero-footer-color);
   text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
 }
 
 .title-hero {
@@ -122,8 +129,7 @@ a {
   text-transform: uppercase;
   line-height: 1.36;
 
-  margin-top: 200px;
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .button.hero {
@@ -133,13 +139,31 @@ a {
   font-size: 16px;
   line-height: 1.88;
 
-  margin-bottom: 200px;
+  padding: 10px 24px;
+
+  }
+
+/* features */
+
+ .feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+
+  .features .section:not(:last-child) {
+  margin-right: 30px;
+  }
+
+  .hiding {
+  display: none;
 }
 
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
+  
+  margin-bottom: 10px;
 }
 
 .features-description {
@@ -149,20 +173,44 @@ a {
 }
 
 /* Зайнятість, наша команда*/
+
+.business .section:not(:last-child) {
+  margin-right: 30px;
+}
+
+.examples {
+  padding-bottom: 94px;
+}
+
 .business-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
 }
 
 .team {
   background-color: var(--background-section-color);
+  
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.cards .section:not(:last-child) {
+margin-right: 30px;
 }
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
+  text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
 }
 
 .team-description {
@@ -170,6 +218,9 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 30px;
 }
 
 .button {
@@ -206,21 +257,36 @@ a {
 
 .footer {
   background-color: var(--background-hero-footer-color);
+  
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   color: var(--hero-text-color);
-}
+
+  margin-right: 0px;
+  }
 
 .home {
   color: var(--hero-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  
+  display: block;
+  margin-top: 28px;
 }
 
 .footer-cont {
   color: rgba(255, 255, 255, 0.6);
+
+  display: block;
+}
+
+.footmail {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .hiding {
