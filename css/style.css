@@ -114,8 +114,7 @@ body {
   color: var(--accent-color);
 }
 
-.business,
-.cards {
+.business {
   display: flex;
 }
 
@@ -229,8 +228,16 @@ body {
   padding-bottom: 94px;
 }
 
-.cards .section:not(:last-child) {
-  margin-right: 30px;
+.cards {
+  display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.cards > .section {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .team-card {
